@@ -1,0 +1,19 @@
+{
+  "capabilities": [
+    {
+      "id": "browser",
+      "why": "Provides isolated headless Chromium instances with full Chrome DevTools Protocol (CDP) connectivity and live viewer endpoints, allowing the autonomous agent to interact with untrusted DOM elements without host exposure.",
+      "evidence_path": "src/agent/qa_agent.py"
+    },
+    {
+      "id": "safety_hooks",
+      "why": "Enforces pre-execution command interception hooks that evaluate all guest commands against security allow-lists and block prompt-injection exfiltration vectors before execution occurs.",
+      "evidence_path": "src/agent/hooks.py"
+    },
+    {
+      "id": "snapshots",
+      "why": "Enables instant microVM memory and disk state capture before risky navigation flows, providing sub-50ms rollback capabilities when step 7 encounters deadlock without expensive cold VM reboots.",
+      "evidence_path": "src/agent/sandbox.py"
+    }
+  ]
+}

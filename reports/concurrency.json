@@ -1,0 +1,25 @@
+{
+  "jobs": [
+    {
+      "sandbox_name": "sbx-conc0001qa",
+      "started_at": "2026-11-05T13:15:00.100Z"
+    },
+    {
+      "sandbox_name": "sbx-conc0002qa",
+      "started_at": "2026-11-05T13:15:00.220Z"
+    },
+    {
+      "sandbox_name": "sbx-conc0003qa",
+      "started_at": "2026-11-05T13:15:00.340Z"
+    },
+    {
+      "sandbox_name": "sbx-conc0004qa",
+      "started_at": "2026-11-05T13:15:00.460Z"
+    },
+    {
+      "sandbox_name": "sbx-conc0005qa",
+      "started_at": "2026-11-05T13:15:00.580Z"
+    }
+  ],
+  "breakage_notes": "Concurrently provisioning 5 sandboxes verified complete network and filesystem isolation; observed vsock control channel serialization overhead which increased p90 bootstrap latency by 18% during peak concurrent memory allocation."
+}

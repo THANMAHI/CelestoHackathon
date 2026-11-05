@@ -1,0 +1,7 @@
+{
+  "failed_step": 7,
+  "total_steps": 10,
+  "policy": "rollback",
+  "rationale": "When step 7 encounters an unexpected DOM modal deadlock or navigation crash during checkout testing, the browser and microVM guest state become corrupted with stale session locks. Applying the rollback policy to our clean snapshot (snap-qa-chkpt-step5) instantly reverts memory, process state, and root filesystem back to a verified pristine state in under 50 milliseconds, bypassing the multi-second latency and credential teardown overhead of a cold VM reboot while guaranteeing clean subsequent evaluation steps.",
+  "trace_path": "reports/failure_trace.jsonl"
+}

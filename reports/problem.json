@@ -1,0 +1,6 @@
+{
+  "who": "Frontend engineering, QA automation, and SecOps teams deploying web applications with untrusted user-submitted content.",
+  "agent_work": "Drives sandboxed Chromium via CDP to discover broken navigation flows, takes pre-test snapshots, and stops adversarial prompt-injection exfiltrations.",
+  "proof_output": "Audit report recording 404 links, blocked prompt-injections, and clean rollback traces.",
+  "idea_source": "idea_bank"
+}
